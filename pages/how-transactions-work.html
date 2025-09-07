@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How Transactions Work - Blockchain Learning Center</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Blockchain Learning Center</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="what-is-blockchain.html">What is Blockchain?</a></li>
+            <li><a href="how-transactions-work.html">How Transactions Work</a></li>
+            <li><a href="three-pillars.html">The Three Pillars</a></li>
+            <li><a href="blockchain-vs-databases.html">Blockchain vs. Databases</a></li>
+            <li><a href="real-world-uses.html">Real-World Uses</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <h2>How Does a Blockchain Transaction Actually Work?</h2>
+        <p>Understanding how a blockchain transaction works is key to grasping this technology. It's like sending an email, but with extra steps to ensure it's <b>secure</b>, <i>verified</i>, and <u>permanent</u>. We'll break it down step by step.</p>
+
+        <table class="content-table">
+            <tr>
+                <td class="td-heading"><h3>Step 1: Creating & Signing</h3></td>
+                <td>
+                    Everything starts when someone wants to send something using a digital wallet.
+                    <ol>
+                        <li><b>Initiation</b>: You enter details like the recipient's address and the amount.</li>
+                        <li><b>Signing</b>: You "sign" it with your private key, which is like a secret password. This proves it's really you.</li>
+                        <li><b>Broadcasting</b>: The signed transaction is sent out to the blockchain network.</li>
+                    </ol>
+                    <span>Think of this as writing a check: you fill it out, sign it, and hand it to the bank.</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-heading"><h4>Step 2: Propagation & Validation</h4></td>
+                <td>
+                    Once broadcast, the transaction spreads across the network. Nodes store it in a waiting area called the <b>mempool</b>. Each node verifies details, like if you have enough funds. This process is not <s>instantaneous</s>, and it is <del>controlled by a single server</del>. It is a <mark>distributed consensus</mark> process.
+                </td>
+            </tr>
+            <tr>
+                <td class="td-heading"><h5>Step 3: Mining & Block Creation</h5></td>
+                <td>
+                    Special nodes (miners or validators) compete to group transactions into a "block." They solve tough puzzles to "win" the right to add the block. The network agrees on the block using rules like Proof of Work<sub>1</sub>.
+                    <pre>Transaction -> Mempool -> Block</pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-heading"><h6>Step 4: Confirmation</h6></td>
+                <td>
+                    Finally, the transaction is official. The block is added to the blockchain, making the transaction immutable. Miners get transaction fees for their work.
+                    <ul>
+                        <li>This process makes blockchain trustworthy.</li>
+                        <li>No central boss, lots of checks, and public yet secure.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-heading">Key Terms</td>
+                <td>
+                    A small table of terms:
+                    <table border="1">
+                        <tr><th>Term</th><th>Meaning</th></tr>
+                        <tr><td>Mempool</td><td>A waiting area for transactions.</td></tr>
+                        <tr><td>Private Key</td><td>A secret password for signing.</td></tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-heading">Media Example</td>
+                <td>
+                    <img src="../img/NotebookLM Mind Map (2).png" alt="transaction lifecycle">
+                    <br><br>
+                    <div class="embed-container">
+                    <iframe src="https://drive.google.com/file/d/1pa8SYMRGOjv0edIzK6-7EeeNenD-LhPv/preview" width="800px" height="450px" allow="autoplay"></iframe>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="page-navigation">
+            <a href="what-is-blockchain.html" class="back">&laquo; Back</a>
+            <a href="three-pillars.html" class="next">Next &raquo;</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Blockchain Learning Center | <a href="mailto:sample@gmail.com">Contact Us</a> | DEVELOPED BY AAQIL</p>
+    </footer>
+
+</body>
+</html>
